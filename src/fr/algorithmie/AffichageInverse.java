@@ -4,10 +4,6 @@ import java.util.Arrays;
 
 public class AffichageInverse {
 
-	public AffichageInverse() {
-	
-	}
-
 	public static void main(String[] args) {
 		
 		//Tableau
@@ -25,6 +21,14 @@ public class AffichageInverse {
 		        tab[tab.length-i-1] = tmp;
 		    }
 		    System.out.println("Tableau après l'inversion: " + Arrays.toString(tab));
+		    
+		//Copier le tableau tab dans le tableau tableauCopy avec la méthode copyOf 
+		    
+		    int[] tableauCopy = Arrays.copyOf(tab, tab.length);
+
+	        for (int i = 0; i < tableauCopy.length; i++) {
+	            System.out.println("tableauCopy position " + i + ": " + tableauCopy[i]);
+	        }
 		
 
 	}
