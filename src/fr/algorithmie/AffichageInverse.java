@@ -14,7 +14,7 @@ public class AffichageInverse {
 			System.out.println(valeurs);
 			
 		}
-		//Affichage d'un tableau renversé
+		//Affichage d'un tableau inversé
 		 for(int i=0; i< tab.length/2; i++){
 		        int tmp = tab[i];
 		        tab[i] = tab[tab.length-i-1];
